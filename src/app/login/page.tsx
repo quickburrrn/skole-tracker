@@ -26,7 +26,7 @@ const FormSchema = z.object({
   fysikkvideoer: z.string(),
 })
 
-export default function Home() {
+export default function Page() {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues : {

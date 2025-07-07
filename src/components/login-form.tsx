@@ -11,12 +11,9 @@ import {
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { useRouter } from "next/router"
 
 async function onSubmit(){
-  const router = useRouter();
-
-  router.push("/")
+  console.log("login")
 }
 
 export function LoginForm({

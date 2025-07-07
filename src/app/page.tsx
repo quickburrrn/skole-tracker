@@ -1,12 +1,9 @@
 "use client";
 
 import React from "react";
-import { useRouter } from "next/navigation";
-import { LoginForm } from "@/components/login-form";
-import { Label } from "@radix-ui/react-label";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "sonner";
-import { TypeOf, z } from "zod";
+import { z } from "zod";
 import { useForm } from "react-hook-form";
 
 import { Button } from "@/components/ui/button";
@@ -14,7 +11,6 @@ import { Input } from "@/components/ui/input";
 import { 
   Form, 
   FormControl, 
-  FormDescription, 
   FormField, 
   FormItem, 
   FormLabel, 
@@ -35,7 +31,7 @@ export default function Home() {
     }
   })
 
-  function onSubmit(data: z.infer<typeof FormSchema>) {
+  function onSubmit() {
     // toast("Du skrev", {
     //   description: (
     //     <pre className="mt-2 w-[320px] rounded-md bg-netural-950 p-4">

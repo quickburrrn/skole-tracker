@@ -50,10 +50,7 @@ export default function Home() {
 
         <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">Dagens kvote :)</h4>
         <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-            <li>5 matte sider</li>
-            <li>1 matte videoer</li>
-            <li>5 fysikk sider</li>
-            <li>1 fysikk videoer</li>
+            <li>3 matte videoer</li>
         </ul>
         
         <Form {...form}>
